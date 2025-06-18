@@ -1,10 +1,12 @@
-# Inventory Pattern Optimization (I-POP)
+# Key Piano Artificial Intellegence (KP-AI)
 
-> Inventory Optimization with Product Reorder Detection Using Unsupervised Learning
+> learn piano without a teacher with a real-time piano key classification system using deep learning
 
 ## 🚀 Overview
 
-Many businesses face challenges in managing inventory because it is difficult to predict the timing and quantity of product reorders. Through this project, **I-POP** (*Inventory Product Order Prediction*) is present as a system that utilizes the **Association Rule Learning** method to analyze purchasing patterns and recommend product reorders automatically. This solution helps businesses prevent stock shortages, reduce waste and increase operational efficiency.
+- Allows users to practice piano independently through key recognition feedback.
+- Implements a deep learning model that accurately classifies pressed keys (single notes and chords) from real-time audio input.
+- Provides an easy-to-use interface that visualizes detected keys and highlights correctness compared to reference input.
 
 ## 🎯 Objectives
 
@@ -14,12 +16,14 @@ Many businesses face challenges in managing inventory because it is difficult to
 
 ## 📊 Dataset
 
-The project using data that from kaggle platform with as follow information:
-- Title : **Grocery Inventory**
-- Description : Sales Dataset Inventory and Sales Data for Grocery Store Management.
-- Publish Date : 03/2025
-- Publisher : Willian Oliveira
-- Link : https://www.kaggle.com/datasets/willianoliveiragibin/grocery-inventory
+The project uses a custom-built dataset consisting of audio recordings from digital piano applications and physical keyboards, annotated with ground truth labels of the played keys or chords.
+- Total Samples (target): 2500
+- Single Notes: 1000
+- Chords: 1000
+- Mixed Play (Live Segment): 500
+Format: .wav audio files
+Annotation: Manual labeling of key names (e.g., C4, E4, G major)
+Link : [Piano Data](https://www.kaggle.com/datasets/willianoliveiragibin/grocery-inventory)
 
 
 ## 🛠️ Tech Stack
@@ -33,17 +37,17 @@ The project using data that from kaggle platform with as follow information:
   <tr>
     <td>Language</td>
     <td>Python</td>
-    <td>The primary language for data analysis and machine learning development</td>
+    <td>Core language for data preprocessing, model development, and evaluation</td>
   </tr>
   <tr>
     <td>Main library</td>
-    <td>Pandas,NumPy </br>PyFPGrowth </br>Matplotlib,Seaborn</td>
-    <td>For data manipulation and numerical calculations </br> For application FP-Growth Algorithm </br>For graphic visualization and association pattern</td>
+    <td>NumPy </br>Librosa </br>Tensorflow </br>Matplotlib, Seaborn, Chroma</td>
+    <td>For numerical calculations </br>For audio feature extraction and signal processing </br>For deep learning model building </br>To visualize waveform, spectrogram, chroma, and prediction feedback</td>
   </tr>
   <tr>
     <td>Tools</td>
-    <td>Google Colab </br>Github </br>Kaggle</td>
-    <td>For cloud-based experiments and notebook execution </br>For controlling, documentation, and collaboration in project </br>To access dataset</td>
+    <td>Google Colab </br>Github </td>
+    <td>For cloud-based experiments and notebook execution </br>For controlling, documentation, and collaboration in project</td>
   </tr>
 </table>
 
@@ -51,18 +55,19 @@ The project using data that from kaggle platform with as follow information:
 > akan diisi diagram proses mesin belajar dengan algoritma FP-Growth
 ## 📈 Results
 > akan diisi hasil evaluasi model dan aturan yang digunakan
+
 ## 🧠 Learned
 
-- Implemented FP-Growth for extracting product association rules from transactional data.
-- Performed data preprocessing and transformation tailored for unsupervised learning.
-- Visualized item patterns and rule metrics to support inventory decision-making.
-- Used GitHub and Google Colab for version control and cloud-based experimentation.
+- Built a deep learning pipeline to classify piano keys from raw audio.
+- Extracted relevant audio features (Mel-spectrogram, Chroma) for input to neural networks.
+- Trained and validated multiple architectures including CNN, GRU, and hybrid models.
+- Developed feedback visualization to guide piano learners interactively.
 
 ## 🌱 Future Work
 
-- Integrate the model with real-time inventory systems for automated reorder actions.
-- Extend the analysis with temporal and seasonal data to capture dynamic demand patterns.
-- Combine unsupervised and supervised learning to improve prediction accuracy.
+- Expand dataset with more chord variations and real-performance recordings.
+- Add feedback correction for wrong key prediction and fingering guidance.
+
 ## 👤 Author
 
 | Nama | Peran | GitHub |
