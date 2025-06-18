@@ -1,6 +1,6 @@
 # Key Piano Artificial Intellegence (KP-AI)
 
-> learn piano without a teacher with a real-time piano key classification system using deep learning
+> Learn Piano without a Teacher with a Real-time Piano Key Classification System Using Deep Learning
 
 ## 🚀 Overview
 
